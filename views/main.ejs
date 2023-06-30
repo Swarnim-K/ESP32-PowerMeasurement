@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Measurement</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Power Measurement</h1>
+
+    <section class="data">
+      <div class="bar-wrap">
+        <label>Voltage</label>
+        <div class="bar blue"  id="voltage" data-percentage="<%= voltage2 %>" data-visible="0" data-max="230"></div>
+      </div>
+      <div class="bar-wrap">
+        <label>Current</label>
+        <div class="bar green" id="current" data-percentage="<%= current2 %>" data-visible="0" data-max="5"></div>
+      </div>
+      <div class="bar-wrap">
+        <label>Power</label>
+        <div class="bar red" id="power" data-percentage="<%= power2 %>" data-visible="0" data-max="1150"></div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
